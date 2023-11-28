@@ -1,3 +1,46 @@
+/* Adicione esta parte para estilizar o modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: rgb(241, 68, 68);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adicione um estilo para o fundo escurecido quando o modal estiver aberto */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilize o botão de fechar se desejar ter um */
+.close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Restante do seu estilo existente */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +56,6 @@
     margin-top: 8rem;
     border: 5px solid black;
     border-radius: 20px;
-    
 }
 
 .title {
@@ -27,7 +69,6 @@
     display: block;
     margin-bottom: 1rem;
 }
-
 
 #numberInput {
     width: 200px;
@@ -46,12 +87,11 @@
     margin-bottom: .5rem;
     margin-bottom: 2rem;
     cursor: pointer;
-
 }
 
 #result:hover {
     background-color: black;
-    color: white
+    color: white;
 }
 
 #resultContainer {
