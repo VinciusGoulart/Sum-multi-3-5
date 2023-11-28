@@ -1,4 +1,3 @@
-
 document.getElementById("result").addEventListener("click", function () {
     const number = document.getElementById("numberInput");
 
